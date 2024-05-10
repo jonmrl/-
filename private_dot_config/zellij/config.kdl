@@ -119,12 +119,6 @@ keybinds clear-defaults=true {
     // Globally enabled binds.
     shared_except "locked" {
         bind "Ctrl q" { SwitchToMode "Locked"; }
-        // bind "Ctrl y" {
-        //     LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
-        //         floating true
-        //         ignore_case true 
-        //     }
-        // }
         bind "Alt f" {
             LaunchPlugin "filepicker" {
                 floating true
