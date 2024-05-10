@@ -1,0 +1,87 @@
+theme = "melsayer"
+
+[editor]
+scrolloff = 999
+line-number = "relative"
+cursorline = true
+auto-save = true
+idle-timeout = 0
+completion-timeout = 5
+completion-trigger-len = 1
+bufferline = "multiple"
+color-modes = true
+text-width = 100
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = [
+  "diagnostics",
+  "file-encoding",
+  "file-type",
+  "position",
+  "selections",
+  "spacer",
+  "version-control",
+]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+max-depth = 4
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
+
+[editor.gutters]
+layout = [
+  "diff",
+  "spacer",
+  "line-numbers",
+  "spacer",
+  "diagnostics",
+  "spacer"
+]
+
+[editor.soft-wrap]
+enable = true
+max-indent-retain = 0
+max-wrap = 25
+
+[keys.normal]
+a = ["append_mode", "collapse_selection"]
+i = ["insert_mode", "collapse_selection"]
+V = ["extend_line_below", "select_mode"]
+X = "extend_line_above"
+
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-k = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+
+[keys.select]
+";" = ["collapse_selection", "normal_mode"]
+x = "extend_line"
+
+[keys.normal.g]
+j = "jump_forward"
+k = "jump_backward"
+q = ":reflow"
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
