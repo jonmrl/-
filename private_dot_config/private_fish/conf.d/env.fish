@@ -52,6 +52,10 @@ abbr -a -- gaa 'git add --all'
 abbr -a -- gc 'git commit --verbose'
 abbr -a -- gcm 'git commit --m'
 
+abbr -a -- gu 'git pull'
+abbr -a -- gp 'git push'
+abbr -a -- gpf 'git push --force'
+
 # Assure that abbreviations initialize only happens once.
 set -g ABBRS_INIT true
 
