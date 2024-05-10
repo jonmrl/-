@@ -1,0 +1,28 @@
+inherits = "meliora"
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+
+"ui.bufferline" = { fg = "darker-grey" }
+"ui.bufferline.active" = { fg = "muted-orange", modifiers = ["underlined"] }
+
+"ui.cursor.match" = { bg = "muted-blue" }
+"ui.cursorline.primary" = { bg = "darker-grey" }
+"ui.gutter" = { bg = "black" }
+
+"ui.linenr" = { fg = "muted-orange", bg = "black", modifiers = ["dim"] }
+"ui.linenr.selected" = { fg = "muted-green", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection", modifiers = ["bold"] }
+"ui.statusline.inactive" = { fg = "dark_white2", bg = "light_black", modifiers = [
+  "dim",
+] }
+"ui.virtual.indent-guide" = { fg = "muted-orange" }
+"ui.virtual.jump-label" = { fg = "muted-blue", modifiers = ["bold"] }
+
+[palette]
+darker-grey = "#33302d"
+muted-blue = "#5c677d"
+muted-green = "#3a4035"
+muted-orange = "#504940"
+selection = "#0000ff"
