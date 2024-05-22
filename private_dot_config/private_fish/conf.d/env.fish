@@ -22,6 +22,9 @@ test -d $__fish_cache_dir; or mkdir -p $__fish_cache_dir
 # Editor
 set -gx EDITOR hx
 
+# Nexus
+set -gx NEXUS $HOME/Nexus
+
 # Rust
 set -q CARGO_HOME; or set -Ux CARGO_HOME $HOME/.cargo
 set -q CARGO_BIN; or set -Ux CARGO_BIN $CARGO_HOME/bin
