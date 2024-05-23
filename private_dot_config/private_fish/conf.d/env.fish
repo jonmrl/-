@@ -49,6 +49,7 @@ abbr -a -- g git
 abbr -a -- gi 'git init'
 abbr -a -- gst 'git status'
 abbr -a -- gsh 'git show'
+abbr -a -- gd 'git diff --minimal'
 
 abbr -a -- ga 'git add'
 abbr -a -- gaa 'git add --all'
