@@ -19,19 +19,18 @@ set -gx SQLITE_HISTORY $XDG_DATA_HOME/sqlite_history
 set -q __fish_cache_dir; or set -Ux __fish_cache_dir $XDG_CACHE_HOME/fish
 test -d $__fish_cache_dir; or mkdir -p $__fish_cache_dir
 
-# Editor
+# Nexus
 set -gx EDITOR hx
 set -gx VISUAL zed
-
-# Nexus
 set -gx NEXUS $HOME/Nexus
 
-# Rust
+# Binaries
 set -q CARGO_HOME; or set -Ux CARGO_HOME $HOME/.cargo
 set -q CARGO_BIN; or set -Ux CARGO_BIN $CARGO_HOME/bin
-
-# Homebrew
 set -gx HOMEBREW_NO_ANALYTICS 1
+
+# CLI tooling
+set -gx BAT_THEME gruvbox-dark
 
 #
 # Initialize frequently used abbreviations.
@@ -41,6 +40,7 @@ set -q ABBRS_INIT; and return
 abbr -a -- fconf 'cd $__fish_config_dir'
 
 abbr -a -- h history
+abbr -a -- cat bat
 abbr -a -- l 'eza --long --all --no-user --git --group-directories-first'
 abbr -a -- lt 'eza --tree --level=2 --git-ignore'
 
