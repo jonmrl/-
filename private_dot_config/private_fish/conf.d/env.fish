@@ -21,6 +21,7 @@ test -d $__fish_cache_dir; or mkdir -p $__fish_cache_dir
 
 # Editor
 set -gx EDITOR hx
+set -gx VISUAL zed
 
 # Nexus
 set -gx NEXUS $HOME/Nexus
