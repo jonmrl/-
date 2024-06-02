@@ -17,6 +17,7 @@ inherits = "meliora"
 "ui.statusline.inactive" = { fg = "dark_white2", bg = "light_black", modifiers = [
   "dim",
 ] }
+"ui.virtual" = { fg = "muted-orange", modifiers = ["italic"] }
 "ui.virtual.indent-guide" = { fg = "muted-orange" }
 "ui.virtual.jump-label" = { fg = "muted-blue", modifiers = ["bold"] }
 

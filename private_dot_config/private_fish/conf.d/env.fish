@@ -20,16 +20,19 @@ set -q __fish_cache_dir; or set -Ux __fish_cache_dir $XDG_CACHE_HOME/fish
 test -d $__fish_cache_dir; or mkdir -p $__fish_cache_dir
 
 # Nexus
+set -gx NEXUS $HOME/Nexus
 set -gx EDITOR hx
 set -gx VISUAL zed
-set -gx NEXUS $HOME/Nexus
 
-# Binaries
+# Executable directories.
 set -q CARGO_HOME; or set -Ux CARGO_HOME $HOME/.cargo
 set -q CARGO_BIN; or set -Ux CARGO_BIN $CARGO_HOME/bin
-set -gx HOMEBREW_NO_ANALYTICS 1
+set -q PNPM_HOME; or set -Ux PNPM_HOME $XDG_DATA_HOME/pnpm
+set -q RYE_HOME; or set -Ux RYE_HOME $XDG_CONFIG_HOME/rye
 
-# CLI tooling
+# Additional flags.
+set -gx HOMEBREW_NO_ANALYTICS 1
+set -gx RYE_NO_AUTO_INSTALL 1
 set -gx BAT_THEME gruvbox-dark
 
 #
@@ -40,6 +43,7 @@ set -q ABBRS_INIT; and return
 abbr -a -- fconf 'cd $__fish_config_dir'
 
 abbr -a -- h history
+abbr -a -- c clear
 abbr -a -- cat bat
 abbr -a -- l 'eza --long --all --no-user --git --group-directories-first'
 abbr -a -- lt 'eza --tree --level=2 --git-ignore'
