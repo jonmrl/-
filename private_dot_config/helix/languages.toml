@@ -1,0 +1,60 @@
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"] }
+emmet-ls = { command = "emmet-language-server", args = [ "--stdio" ]}
+
+[[language]]
+name = "html"
+language-servers = [ 
+  { name = "tailwindcss-ls" }
+]
+
+[[language]]
+name = "css"
+language-servers = [ 
+  { name = "tailwindcss-ls" }
+]
+
+[[language]]
+name = "javascript"
+language-servers = [
+  { name = 'biome' },
+  { name = 'tailwindcss-ls' },
+  { name = 'typescript-language-server', except-features = ['format'] }
+]
+auto-format = true
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "a.js"] }
+
+[[language]]
+name = "typescript"
+language-servers = [
+  { name = 'biome' },
+  { name = 'tailwindcss-ls' }, 
+  { name = 'typescript-language-server', except-features = ['format'] }
+]
+auto-format = true
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "a.ts"] }
+
+[[language]]
+name = "jsx"
+language-servers = [
+  { name = 'biome' },
+  { name = 'emmet-ls' },
+  { name = 'tailwindcss-ls' },
+  { name = 'typescript-language-server', except-features = ['format'] }
+]
+auto-format = true
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "a.jsx"] }
+
+[[language]]
+name = "tsx"
+language-servers = [
+  { name = 'biome' },
+  { name = 'emmet-ls' },
+  { name = 'tailwindcss-ls' },
+  { name = 'typescript-language-server', except-features = ['format'] }
+]
+auto-format = true
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "a.tsx"] }
