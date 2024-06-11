@@ -8,13 +8,15 @@ emmet-ls = { command = "emmet-language-server", args = [ "--stdio" ]}
 [[language]]
 name = "html"
 language-servers = [ 
-  { name = "tailwindcss-ls" }
+  { name = "tailwindcss-ls" },
+  { name = "emmet-ls" }
 ]
 
 [[language]]
 name = "css"
 language-servers = [ 
-  { name = "tailwindcss-ls" }
+  { name = "tailwindcss-ls" },
+  { name = "emmet-ls" }
 ]
 
 [[language]]

@@ -7,17 +7,20 @@
 
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light Soft",
+    "light": "Gruvbox Light Hard",
     "dark": "Gruvbox Dark Soft"
   },
   "buffer_font_family": "Berkeley Nerd",
-  "buffer_font_size": 13,
-  "ui_font_size": 13,
+  "buffer_font_size": 12,
+  "ui_font_size": 12,
 
   "vim_mode": true,
+  "relative_line_numbers": true,
   "confirm_quit": true,
   "autosave": "on_focus_change",
-  "preferred_line_length": 100,
+  "preferred_line_length": 80,
+  "scrollbar": { "show": "never" },
+  "vertical_scroll_margin": 0,
   "preview_tabs": {
     "enabled": false
   },
