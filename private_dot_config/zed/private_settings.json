@@ -10,17 +10,24 @@
     "light": "Gruvbox Light Hard",
     "dark": "Gruvbox Dark Soft"
   },
+  "cursor_blink": false,
   "buffer_font_family": "Berkeley Nerd",
   "buffer_font_size": 12,
   "ui_font_size": 12,
 
   "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "on_yank",
+    "use_multiline_find": true
+  },
   "relative_line_numbers": true,
-  "confirm_quit": true,
-  "autosave": "on_focus_change",
   "preferred_line_length": 80,
+
+  "confirm_quit": true,
+  "autosave": "off",
   "scrollbar": { "show": "never" },
   "vertical_scroll_margin": 0,
+
   "preview_tabs": {
     "enabled": false
   },
