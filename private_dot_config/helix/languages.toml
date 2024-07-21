@@ -1,3 +1,13 @@
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+indent = { tab-width = 8, unit = "\t" }
+formatter = { command = "rustfmt", args = ["--unstable-features"] }
+auto-format = true
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
 [language-server.rust-analyzer.config.check]
 command = "clippy"
 

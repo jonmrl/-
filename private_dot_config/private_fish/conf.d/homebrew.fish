@@ -1,7 +1,7 @@
 #
-# Initialize homebrew.
+# Initialize homebrew
 
-# Ensure homebrew exists.
+# Ensure homebrew exists
 set brewcmds (
     path filter \
          $HOME/.homebrew/bin/brew \
@@ -11,10 +11,10 @@ set brewcmds (
     )
 test (count $brewcmds) -gt 0 || return 1
 
-# Setup cache storage location.
+# Setup cache storage location
 set brew_init $__fish_cache_dir/brew_init.fish
 
-# Remove cached files older than four days.
+# Remove cached files older than four days
 find $__fish_cache_dir -depth 1 -type f -mtime +4 -delete &>/dev/null
 
 if not test -r $brew_init

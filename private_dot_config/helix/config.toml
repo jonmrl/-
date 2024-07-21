@@ -1,14 +1,16 @@
 theme = "melsayer"
 
 [editor]
-scrolloff = 999
+bufferline = "multiple"
 line-number = "relative"
-cursorline = true
 auto-save = true
-idle-timeout = 0
+color-modes = true
+cursorline = true
+true-color = true
 completion-timeout = 5
 completion-trigger-len = 1
-color-modes = true
+idle-timeout = 10
+scrolloff = 999
 
 [editor.statusline]
 left = ["mode", "spacer", "spinner", "file-name"]
@@ -27,6 +29,7 @@ mode.select = "SELECT"
 
 [editor.lsp]
 display-inlay-hints = true
+display-messages = true
 
 [editor.cursor-shape]
 insert = "bar"

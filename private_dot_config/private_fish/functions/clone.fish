@@ -1,4 +1,4 @@
-function clone --description 'a better git clone'
+function clone --description 'A better git clone'
     set -q NEXUS; or set NEXUS $HOME/Nexus
 
     if test (count $argv) -eq 0

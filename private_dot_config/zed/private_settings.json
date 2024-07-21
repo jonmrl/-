@@ -1,4 +1,10 @@
 {
+  "assistant": {
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-4o"
+    }
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -31,7 +37,7 @@
   "preview_tabs": {
     "enabled": false
   },
-  "copilot": {
+  "inline_completions": {
     "disabled_globs": [".env", ".gitignore", ".next"]
   },
   "journal": {

@@ -184,7 +184,7 @@ themes {
 theme "default"
 
 // The name of the default layout to load on startup.
-// default_layout "compact"
+default_layout "minimal"
 
 // Toggle enabling the mouse mode.
 mouse_mode true
@@ -200,4 +200,4 @@ copy_command "pbcopy"
 copy_on_select false
 
 // The folder in which Zellij will look for layouts.
-layout_dir "/Users/enth/.config/zellij/layouts"
+layout_dir "/Users/ennui/.config/zellij/layouts"
