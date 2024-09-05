@@ -70,3 +70,8 @@ language-servers = [
 ]
 auto-format = true
 formatter = { command = "biome", args = ["format", "--stdin-file-path", "a.tsx"] }
+
+[[language]]
+name = "markdown"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "--ext", "md", "-"] }

@@ -1,6 +1,6 @@
 [window]
 position = { x = 928, y = 555 }
-padding = { x = 20, y = 20 }
+padding = { x = 18, y = 18 }
 decorations = "buttonless"
 opacity = 0.973
 dynamic_title = true
@@ -36,7 +36,7 @@ text = "#1c1917"
 cursor = "#d6d0cd"
 
 [colors.search]
-matches = { foreground = "#1c1917", background = "#24201e" }
+matches = { foreground = "#c2b4a8", background = "#0000ff" }
 focused_match = { foreground = "#1c1917", background = "#2a2522" }
 
 [colors.hints]

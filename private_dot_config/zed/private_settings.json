@@ -1,5 +1,10 @@
 {
   "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2",
     "provider": {
       "name": "openai",
       "default_model": "gpt-4o"
@@ -13,7 +18,7 @@
 
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light Hard",
+    "light": "Atelier Dune Light",
     "dark": "Gruvbox Dark Soft"
   },
   "cursor_blink": false,

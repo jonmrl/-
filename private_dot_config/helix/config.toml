@@ -1,16 +1,17 @@
 theme = "melsayer"
 
 [editor]
-bufferline = "multiple"
-line-number = "relative"
-auto-save = true
-color-modes = true
-cursorline = true
-true-color = true
-completion-timeout = 5
-completion-trigger-len = 1
-idle-timeout = 10
 scrolloff = 999
+line-number = "relative"
+cursorline = true
+idle-timeout = 0
+preview-completion-insert = false
+completion-trigger-len = 1
+true-color = true
+bufferline = "multiple"
+color-modes = true
+popup-border = "all"
+auto-save = true
 
 [editor.statusline]
 left = ["mode", "spacer", "spinner", "file-name"]
@@ -22,23 +23,32 @@ right = [
   "selections",
   "spacer",
   "version-control",
+  "spacer",
 ]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
 [editor.lsp]
-display-inlay-hints = true
 display-messages = true
+display-inlay-hints = false
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.file-picker]
 hidden = false
 max-depth = 4
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
 
 [editor.indent-guides]
 render = true
@@ -57,8 +67,9 @@ layout = [
 
 [editor.soft-wrap]
 enable = true
-max-indent-retain = 0
-max-wrap = 25
+max-indent-retain = 80
+max-wrap = 80
+wrap-indicator = ""
 
 [keys.normal]
 a = ["append_mode", "collapse_selection"]
@@ -79,6 +90,7 @@ C-k = [
 x = "extend_line"
 
 [keys.normal.g]
+b = "save_selection"
 j = "jump_forward"
 k = "jump_backward"
 q = ":reflow"

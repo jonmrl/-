@@ -34,6 +34,7 @@ set -q PNPM_HOME; or set -Ux PNPM_HOME $XDG_DATA_HOME/pnpm
 set -q RYE_HOME; or set -Ux RYE_HOME $XDG_CONFIG_HOME/rye
 
 # Miscellaneous flags
+set -gx HELIX_RUNTIME $XDG_CONFIG_HOME/helix/runtime
 set -gx HOMEBREW_NO_ANALYTICS 1
 set -gx RYE_NO_AUTO_INSTALL 1
 set -gx BAT_THEME gruvbox-dark
@@ -50,7 +51,7 @@ abbr -a -- c clear
 abbr -a -- cat bat
 abbr -a -- ds cdh
 abbr -a -- l 'eza --long --all --no-user --git --group-directories-first'
-abbr -a -- lt 'eza --tree --level=2 --git-ignore'
+abbr -a -- lt 'eza --tree --level=3 --git-ignore'
 abbr -a -- cargoup 'cargo install-update -ag'
 
 # Git
